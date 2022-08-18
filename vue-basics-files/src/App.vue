@@ -1,18 +1,24 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+  <MyNavbar />
+  <router-view />
+  <MyNewComponent />
+  <LabIteration3 />
+  <MyFooter />
 </template>
 
 <script>
-import Navbar from '@/components/Navbar.vue';
+import MyNavbar from '@/components/MyNavbar.vue';
+import MyFooter from '@/components/MyFooter.vue';
+import MyNewComponent from '@/components/MyNewComponent.vue';
+import LabIteration3 from '@/components/LabIteration3.vue';
 
 export default {
-  name: 'barra-nav',
+  name: 'App',
   components: {
-    Navbar,
+    MyNavbar,
+    MyFooter,
+    MyNewComponent,
+    LabIteration3,
   },
 };
 </script>

@@ -8,6 +8,12 @@
   </div>
 </template>
 
+<script>
+export default {
+  name: 'MyFooter',
+};
+</script>
+
 <style>
 .footer {
     width: 100%;
